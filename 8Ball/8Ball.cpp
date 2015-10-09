@@ -146,8 +146,9 @@ int stoss(int count; int *eBall) {
 							}
 						}
 					}
-					/* jede weitere Kugel */
+					
 					else {
+						/* jede weitere Kugel */
 						if (ball == ansage) {
 							match = true;
 						}
@@ -173,6 +174,9 @@ int stoss(int count; int *eBall) {
 		else {
 			turn = (turn % 2) + 3;
 		}
-		}
+	}
+}
 
+void setAnsage(int ansageTemp) {
+	ansage = ansageTemp;
 }
